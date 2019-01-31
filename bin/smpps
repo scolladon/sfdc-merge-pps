@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+'use strict';
+
+const program = require('commander');
+const orchestrator = require('../index.js');
+const pjson = require('../package.json');
+
+program
+  .description(pjson.description)
+  .version(pjson.version)
+  .option('-p, --pps [path]', 'path to the profile or permission set', (v,m)=>{m.push(v);return m;},[])
+  .option('-o, --output [path]', 'path where to output the merged profile or permission set', './merged.pps')
+  .parse(process.argv);
+orchestrator(program, console.log)
+.catch(function(err){
+  console.log(err);
+});

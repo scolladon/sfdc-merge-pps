@@ -1,0 +1,27 @@
+{
+  "name": "sfdc-merge-pps",
+  "version": "1.0.0",
+  "description": "Merge profile and permission set",
+  "keyword": [
+    "salesforce",
+    "profile",
+    "permisison set",
+    "cli"
+  ],
+  "main": "index.js",
+  "bin": {
+    "smp": "./bin/smpps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scolladon/sfdc-merge-pps.git"
+  },
+  "author": "Sébastien Colladon <colladonsebastien@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "extendify": "^1.0.0",
+    "xml2js": "^0.4.17",
+    "xmlbuilder": "^10.0.0"
+  }
+}

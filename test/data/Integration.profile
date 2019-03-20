@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <classAccesses>
-        <apexClass>SICo_BundleDeepCloneController</apexClass>
+        <apexClass>_BundleDeepCloneController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_CaseUnlockProvisioningController</apexClass>
+        <apexClass>_CaseUnlockProvisioningController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_EmailMessageResendEmailController</apexClass>
+        <apexClass>_EmailMessageResendEmailController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_GetDrupalAdress</apexClass>
+        <apexClass>_GetDrupalAdress</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_GetDrupalAdress_Test</apexClass>
+        <apexClass>_GetDrupalAdress_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_InvoiceRollUpController</apexClass>
+        <apexClass>_InvoiceRollUpController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_OmniChannelStatusAutomation_CTRL</apexClass>
+        <apexClass>_OmniChannelStatusAutomation_CTRL</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_OmniChannelStatusAutomation_TEST</apexClass>
+        <apexClass>_OmniChannelStatusAutomation_TEST</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_OpportunitySendOrderEmailController</apexClass>
+        <apexClass>_OpportunitySendOrderEmailController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_SiteCheckEligibilityController</apexClass>
+        <apexClass>_SiteCheckEligibilityController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_UsageMassDeleteExtension</apexClass>
+        <apexClass>_UsageMassDeleteExtension</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>SICo_UtilityCloneData_CLS</apexClass>
+        <apexClass>_UtilityCloneData_CLS</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>true</custom>
-    <description>[SICo] : Integration Profile</description>
+    <description>[] : Integration Profile</description>
     <fieldPermissions>
         <editable>false</editable>
-        <field>SICo_BillingSchedule__c.Conga_URL_Lightning__c</field>
+        <field>_BillingSchedule__c.Conga_URL_Lightning__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>SICo_CR__c.CongaURL_CR_Intervention_Lightning__c</field>
+        <field>_CR__c.CongaURL_CR_Intervention_Lightning__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>SICo_CR__c.CongaURL_lightning__c</field>
+        <field>_CR__c.CongaURL_lightning__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -89,7 +89,7 @@
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-SICo Case Feed Layout</layout>
+        <layout>Case- Case Feed Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>EmailMessage-Présentation E-mail</layout>
@@ -101,20 +101,20 @@
         <layout>Opportunity-Opportunity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>SICo_BillingSchedule__c-Billing Schedule Layout</layout>
+        <layout>_BillingSchedule__c-Billing Schedule Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>SICo_CR__c-CR Layout</layout>
+        <layout>_CR__c-CR Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>SICo_Site__c-Site Layout</layout>
+        <layout>_Site__c-Site Layout</layout>
     </layoutAssignments>
     <loginIpRanges>
         <endAddress>255.255.255.255</endAddress>
         <startAddress>0.0.0.0</startAddress>
     </loginIpRanges>
     <pageAccesses>
-        <apexPage>SICo_UsageMassDelete</apexPage>
+        <apexPage>_UsageMassDelete</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <userLicense>Salesforce</userLicense>

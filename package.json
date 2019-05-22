@@ -10,7 +10,7 @@
   ],
   "main": "index.js",
   "bin": {
-    "smp": "./bin/smpps"
+    "smpps": "./bin/smpps"
   },
   "repository": {
     "type": "git",

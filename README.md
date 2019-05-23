@@ -45,19 +45,15 @@ $ smpps -h
 
   smp({
     'pps':'./src/profile/Admin.profile' // path to the profile or permission set
-  }, console.log);
+  })
+  .then(// my treatment
+  );
 ```
 
 
 ## Built With
 
-"commander": "^2.9.0",
-    "extendify": "^1.0.0",
-    "xml2js": "^0.4.17",
-    "xmlbuilder": "^10.0.0"
-
 * [commander](https://github.com/tj/commander.js/) - The complete solution for node.js command-line interfaces, inspired by Ruby's commander.
-* [extendify](https://github.com/bigShai/extendify) - Deep extend with customizable behavior.
 * [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) - XML to JavaScript object converter.
 * [xmlbuilder](https://github.com/oozcitak/xmlbuilder-js) - An XML builder for node.js
 

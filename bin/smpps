@@ -12,6 +12,7 @@ program
   .option('-o, --output [path]', 'path where to output the merged profile or permission set', './merged.pps')
   .parse(process.argv);
 orchestrator(program, console.log)
+.then(result=>console.log(`Permissions ${result} merged`))
 .catch(function(err){
   console.log(err);
 });

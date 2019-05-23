@@ -1,6 +1,6 @@
 {
   "name": "sfdc-merge-pps",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Merge profile and permission set",
   "keyword": [
     "salesforce",

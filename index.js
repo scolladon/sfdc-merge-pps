@@ -26,16 +26,19 @@ const permissionSections = {
 
 // Plugin to merge package.xml.
 module.exports = (config) => {
-
   // Check if we have enough config options
-  if (typeof config.pps === 'undefined' || config.pps === null) {
-    throw new Error('Not enough config options');
+  if (config.pps.length === 0) {
+    throw 'list of permissions to merge is empty'
   }
+  config.pps.forEach(permission=>{
+    if(!fs.existsSync(permission)){
+      throw `${permission} is not accessible`
+    }
+  })
 
   // The module return this promise
   // This is where the job is done
   return new Promise((resolve, reject) => {
-
   // Chain all pps given to the command line in that order
     config.pps.reduce((previousPromise, nextFile) => 
       previousPromise.then((files) =>
@@ -54,7 +57,7 @@ module.exports = (config) => {
         }
         Object.keys(aPPS.content[aPPS.type]).filter(p=>permissionSections.hasOwnProperty(p))
         .forEach(p=>{
-          mergedPPS[aPPS.type][p] = mergePermission(aPPS.content[aPPS.type][p] || [], mergedPPS[aPPS.type][p] || [], permissionSections[p]) 
+          mergedPPS[aPPS.type][p] = mergePermission(mergedPPS[aPPS.type][p] || [],aPPS.content[aPPS.type][p] || [], permissionSections[p]) 
         })
         return mergedPPS;
       }, {}))
